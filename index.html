@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>AJAX jquery</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>TESTING AJAX</h1>
+        <button id="newEmpBtn" class="btn btn-primary btn-block">New Employee</button><br/><br>
+            <form id="newForm">
+                <div class="form-group row">
+                    <label for="empName" class="col-sm-2 col-form-label">Employee Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="empName" placeholder="Employee Name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="empSalary" class="col-sm-2 col-form-label">Employee Salary</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="empSalary" placeholder="Employee Salary">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="empAge" class="col-sm-2 col-form-label">Employee Age</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="empAge" placeholder="Employee Age">
+                    </div>
+                </div>
+                <button id="submitEmp" type="submit" class="btn btn-primary">Add Employee</button>
+            </form>
+    
+        <div id="updateFormDiv">
+                <form id="updateForm">
+                        <div class="form-group row">                            
+                            <div class="col-sm-10">
+                                <input type="hidden" class="form-control" id="empId" >
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="updateName" class="col-sm-2 col-form-label">Employee Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="updateName" placeholder="Employee Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="updateSalary" class="col-sm-2 col-form-label">Employee Salary</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="updateSalary" placeholder="Employee Salary">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="updateAge" class="col-sm-2 col-form-label">Employee Age</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="updateAge" placeholder="Employee Age">
+                            </div>
+                        </div>
+                        <button id="updateEmp" type="submit" class="btn btn-primary">Update Employee</button>
+                    </form>
+        </div>
+        <table id="empTable" class="table table-bordered table-hover">
+            <thead>
+                <th>Employee ID</th>
+                <th>Employee Name</th>
+                <th>Employee Salary</th>
+                <th>Employee Age</th>
+                <th>Aksi</th>
+            </thead>
+            <tbody id="empBody"></tbody>
+        </table>
+    </div>
+</body>
+</html>
